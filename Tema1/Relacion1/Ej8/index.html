@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 8</title>
+</head>
+<body>
+<style>
+    body{
+        width: 100%;
+        
+    }
+    
+    p{
+        font-size: x-large ;
+        margin-left: 10px;
+    }
+</style>
+    <h1 >Web de bienvenida</h1>
+   
+    <button type="button" onclick="Espanol()" >Spanish</button>
+    <button type="button" onclick="English()">English</button>
+    <button type="button" onclick="Russian()" >Russian</button><br/>
+
+    <p id="Espanol" ></p><p  id="English" ></p><p id="Russian" ></p>
+
+
+    <script>
+        function Espanol(){
+            document.write("Bienvenido")
+        }
+        function English(){
+            document.write("Welcome")
+        }
+        function Russian(){
+            document.write("Добро пожаловать")
+        }
+    </script>
+</body>
+
+</html>
