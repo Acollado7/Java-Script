@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <script>
+        /*Realiza una función que tome uno, dos o tres parámetros.
+        Si le introduzco solo un parámetro hará el cubo, si le introduzco dos, hará la multiplicación de ambos parámetros y si le introduzco tres la suma de ambos.
+        Pon ejemplos de su uso.
+        calcula(5); calcula(5,5); calcula(5,5,5);*/
+
+        function calcula(a,b,c){
+            if(b == undefined && c == undefined){
+                return a*a*a;
+            }else if (c == undefined){
+                return a*b;
+            }else{
+                return a+b+c
+            }
+            
+            
+        }
+        console.log(calcula(5))
+        console.log(calcula(5,4))
+        console.log(calcula(5,5,5))
+    </script>
+    
+
+</body>
+</html>

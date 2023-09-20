@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <h1>Pruebas Tema 2 JS</h1>
+<style>
+    p{
+        font-size: x-large;
+    }
+</style>
+    
+
+    <script>
+        // la palabra var esta reservada para las variables
+        //if...else estructura condicional
+        //for bucle
+
+
+        //cuando la variable es constante se aconseja utilizar const
+        //las constantes van en mayusculas ==  FINAL de java
+        //String numbre boolean array object (tipos de datos)
+        
+        var persona = {
+            nombre:"Dimas",
+            edad :28,
+            altura: 185,
+            
+        }
+            
+    
+        function imprimirNombre(){
+
+            document.getElementById('id').innerHTML = 'El usuario con nombre ' + persona.nombre + ' de edad ' + persona.edad +' y altura ' + persona.altura + ' cm ha aparecido porque has pulsado el boton'
+            document.getElementById('id').style.color = "darkgreen"
+        }
+
+
+    </script>
+
+    
+    <p id="id" onclick="imprimirNombre()"> Pulsa para ver el usuario</p>
+</body>
+</html>
