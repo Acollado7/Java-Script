@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>ARRAY VAMPIRO</title>
+</head>
+<body>
+<h1>ARRAY VAMPIRO</h1>
+<script>
+let arr=[1,2,3,4,5,5,4,3,2,1];
+/*INCLUYE TU CÓDIGO AQUÍ*/
+function vampiro (arr){
+    if (arr.length % 2 == 0) {
+        return false;
+    }
+    for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+        if (arr[i]!= arr[arr.length-1-i]) {
+            return false;
+        }
+        
+    }
+    return true;
+}
+console.log(vampiro(arr));
+</script>
+</body>
+</html>

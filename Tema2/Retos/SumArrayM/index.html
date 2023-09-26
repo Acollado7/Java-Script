@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RECURSIVIDAD</title>
+</head>
+
+<body>
+    <p>let array = [1,2,3,4];
+        Array.isArray(array); // true
+    </p>
+    <script>
+        let numeros = [1, [2, 3, 4], [8, 15, [5, 1]], 27];
+        console.log(numeros)
+        // ESCRIBE TU CÓDIGO AQUÍ
+        function sumaArray(longitud) {
+            let sum = 0;
+            for (let i = 0; i < longitud.length; i++) {
+                if (Array.isArray(longitud[i])) {
+                    sum += sumaArray(longitud[i]);
+                } else {
+                    sum += longitud[i];
+                }
+
+            }
+            return sum;
+        }
+        const verArray = (longitud, num) => {
+            let sum = 0;
+            for (let i = 0; i < longitud.length; i++) {
+                if (Array.isArray(longitud[i])) {
+                    sum += verArray(longitud[i], num);
+                } else {
+                    if (longitud[i] === num) sum++;
+
+                }
+
+            }
+            return sum;
+        }
+
+        console.log(verArray(numeros, 5 ));
+
+        //  var resultado = sumaArray(numeros);
+        // console.log(resultado)
+    </script>
+</body>
+
+</html>
